@@ -99,7 +99,7 @@ def get_weighted_sample(df: pd.DataFrame, columns: list[str], total_sample_size:
 
     return sampled_df
 
-def get_min_distribution_sample_size(df: pd.DataFrame, columns: list[str], total_sample_size: int, random_state: int=42):
+def get_min_distribution_sample_size(df: pd.DataFrame, columns: list[str], random_state: int=42):
     """Function to determine the minimum sample size needed to form a representative sample from
     a given dataframe maintaining the same distribution of the columns of interest
     
@@ -109,8 +109,6 @@ def get_min_distribution_sample_size(df: pd.DataFrame, columns: list[str], total
         The dataframe to be sampled.
     columns: list[str]
         List of column names. These are the columns whose distributions are used for the sampling.
-    total_sample_size: int
-        Size of the sample to be taken.
     randon_state: int, default = 42
         Use random state for reproducible results
 
@@ -120,6 +118,6 @@ def get_min_distribution_sample_size(df: pd.DataFrame, columns: list[str], total
         Minimum sample size.
     """
 
-    sampled_df = get_weighted_sample(df, columns, total_sample_size, random_state)
+    sampled_df = get_weighted_sample(df, columns, 1, random_state)
 
     return sampled_df.shape[0]
