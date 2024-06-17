@@ -1,4 +1,4 @@
-# DISTRIBUTION SAMPLER
+# MULTI COLUMN DISTRIBUTION SAMPLER
 
 Function to draw a sample from a given dataframe while maintaining the same distribution of the columns of interest.
 Also includes a function to determine the minimum sample size needed to ensure the distribution of the columns of interest in the given dataframe.
@@ -21,19 +21,19 @@ Python 3.x
 
 # Installation
 
-distribution_sampler can be installed using the following command:
+multi_column_distribution_sampler can be installed using the following command:
 
 ```
-pip install distribution_sampler
+pip install multi_column_distribution_sampler
 ```
 or
 ```
-pip3 install distribution_sampler
+pip3 install multi_column_distribution_sampler
 ```
 
 # Dependencies
 
-distribution_sampler depends on the following packages:-
+multi_column_distribution_sampler depends on the following packages:-
 
 * numpy
 * pandas

@@ -1,7 +1,7 @@
 import pytest
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src', 'distribution_sampler'))
-from distribution_sampler import get_weighted_sample
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src', 'multi_column_distribution_sampler'))
+from multi_column_distribution_sampler import get_weighted_sample
 # the test dataset is taken from UCI Machine Learning Repo
 from ucimlrepo import fetch_ucirepo 
 
